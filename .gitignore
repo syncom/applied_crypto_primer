@@ -1,0 +1,8 @@
+.DS_Store
+*.bak
+*.snm
+*.log
+*.aux
+*.nav
+*.bbl
+*.blg
