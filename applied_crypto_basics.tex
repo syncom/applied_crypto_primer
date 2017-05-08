@@ -121,7 +121,7 @@ Version: 2017
 \end{frame}
 
 %-- Section: applied crypto --
-\section{Applied Cryptography and Security Protocols}
+\section{Applied Cryptography Basics}
 \begin{frame}
 \frametitle{Outline}
 \tableofcontents[currentsection]
@@ -321,6 +321,22 @@ secure system.
   \label{fig:keymanagement}
 \end{figure}
 \end{frame}
+
+\begin{frame}
+\frametitle{Key Derivation Function (KDF)}
+A KDF drives one or more secret keys from a secret value. It eases
+secret key management.
+\begin{itemize}
+\item Strech keys into longer keys
+\item Convert keys into a required format
+\end{itemize}
+
+KDF examples: PBKDF2 (RFC 2898), HMAC-based Extract-and-Expand Key
+Derivation Function (HKDF, RFC 5869), bcrypt, scrypt, argon2 (PHC
+winner).
+
+\end{frame}
+
 
 \begin{frame}
 \frametitle{Key Management is Hard}
@@ -673,7 +689,7 @@ security parameters for each separate connection
 \begin{itemize}
 \item OpenSSL (BSD)
 \item BoringSSL (Google's fork of OpenSSL)
-%\item GnuTLS (LGPL)
+\item GnuTLS (LGPL)
 \item SChannel (Microsoft)
 \item SharkSSL, mbedTLS (for embedded devices)
 \item Etc.
