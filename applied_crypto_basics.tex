@@ -300,6 +300,21 @@ Nonce is to ensure that old communications cannot be replayed as new.
 \end{frame}
 
 \begin{frame}
+\frametitle{Key Derivation Function (KDF)}
+A KDF drives one or more secret keys from a secret value. It eases
+secret key management.
+\begin{itemize}
+\item Strech keys into longer keys
+\item Convert keys into a required format
+\end{itemize}
+
+KDF examples: PBKDF2 (RFC 2898), HMAC-based Extract-and-Expand Key
+Derivation Function (HKDF, RFC 5869), bcrypt, scrypt, argon2 (PHC
+winner).
+
+\end{frame}
+
+\begin{frame}
 \frametitle{Key Management}
 \begin{itemize}
 \item Initialization of system users within a domain
@@ -320,21 +335,6 @@ secure system.
   \caption{Key management life cycle.}
   \label{fig:keymanagement}
 \end{figure}
-\end{frame}
-
-\begin{frame}
-\frametitle{Key Derivation Function (KDF)}
-A KDF drives one or more secret keys from a secret value. It eases
-secret key management.
-\begin{itemize}
-\item Strech keys into longer keys
-\item Convert keys into a required format
-\end{itemize}
-
-KDF examples: PBKDF2 (RFC 2898), HMAC-based Extract-and-Expand Key
-Derivation Function (HKDF, RFC 5869), bcrypt, scrypt, argon2 (PHC
-winner).
-
 \end{frame}
 
 
