@@ -233,8 +233,12 @@ modes
 \frametitle{Recommendation of block cipher and modes}
 General rules
 \begin{itemize}
-\item Use AEAD (authenticated encryption with associated data) whenever
-you can
+\item Use AEAD (authenticated encryption with additonal data) whenever
+you can. AEAD examples
+\begin{itemize}
+\item AES256-GCM
+\item Chacha20-Poly1305, XChaCha20-Poly1305
+\end{itemize}
 \item Consult an expert if you are unsure about the cipher or mode
 
 \begin{figure}[hbt!]
